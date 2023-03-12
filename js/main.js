@@ -20,3 +20,6 @@ function lenghtCheck(str, maxLen) {
 
   return false;
 }
+
+getRand(1, 10);
+lenghtCheck('keksik', 23);
