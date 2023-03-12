@@ -1,10 +1,10 @@
 function getRand(min, max) {
   if (min < 0 || max < 0) {
-    alert('nums are lower than 0');
+//    alert('nums are lower than 0');
     return '';
   }
   if (min > max) {
-    alert('min > max');
+//    alert('min > max');
     return '';
   }
   if (min === max) {
