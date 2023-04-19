@@ -36,4 +36,4 @@ function createObj () {
 
 const randObj = Array.from({length: objCount}, createObj);
 
-console.log(randObj);
+print(randObj);
