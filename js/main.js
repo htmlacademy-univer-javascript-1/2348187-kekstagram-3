@@ -18,6 +18,22 @@ function lenghtCheck(str, maxLen) {
 
   return false;
 }
+lenghtCheck('AHAHAH', 2);
+const objCount = 25;
 
-getRand(1, 10);
-lenghtCheck('keksik', 23);
+let ID = 0;
+
+function createObj () {
+  ID++;
+  return {
+    id: `${ID}`,
+    url: `photos/.${ID}jpg`,
+    description: `this is picture number ${ID}`,
+    likes: getRand(15, 200),
+    comments: getRand(0, 200)
+  };
+}
+
+const randObj = Array.from({length: objCount}, createObj);
+
+console.log(randObj);
